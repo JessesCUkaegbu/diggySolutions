@@ -5,31 +5,30 @@
 
 {% block content %}
 
-        <!-- 
-        ================================================== 
-            Global Page Section Start
-        ================================================== -->
-        <section class="global-page-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="block">
-                            <h2>Contact</h2>
-                            <ol class="breadcrumb">
-                                <li>
-                                    <a href="index.html">
-                                        <i class="ion-ios-home"></i>
-                                        Home
-                                    </a>
-                                </li>
-                                <li class="active">Contact</li>
-                            </ol>
-                        </div>
-                    </div>
+<!-- 
+================================================== 
+    Global Page Section Start
+================================================== -->
+<section class="global-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2>Contact</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="{% url 'index' %}">
+                                <i class="ion-ios-home"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="active">Contact</li>
+                    </ol>
                 </div>
             </div>
-        </section>
-
+        </div>
+    </div>
+</section>
 
 <!-- 
 ================================================== 
@@ -75,12 +74,10 @@
                  <div class="map-area">
                     <h2 class="subtitle  wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Find Us</h2>
                     <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
-                        Si aute quis eu proident o cupidatat ne anim nescius, et est praesentibus, o quorum vidisse expetendis, nostrud eram quibusdam ad nam nostrud ubi.
-                        
+                        Si aute quis eu proident o cupidatat ne anim nescius, et est praesentibus, o quorum vidisse expetendis, nostrud eram quibusdam ad nam nostrud ubi. 
                     </p>
                     <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63452.12371191071!2d-10.810878254215096!3d6.295535601788916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf09f803d4a9fcc1%3A0x5b6c4dd7069694af!2sMonrovia%2C%20Liberia!5e0!3m2!1sen!2s!4v1710210098721!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63452.12371191071!2d-10.810878254215096!3d6.295535601788916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf09f803d4a9fcc1%3A0x5b6c4dd7069694af!2sMonrovia%2C%20Liberia!5e0!3m2!1sen!2s!4v1710210098721!5m2!1sen!2s" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
                     </div>
                 </div>
             </div>
@@ -114,27 +111,23 @@
     </div>
 </section>  
 
-
-
-
-            <!--
-            ==================================================
-            Call To Action Section Start
-            ================================================== -->
-            <section id="call-to-action">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="block">
-                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">SO WHAT YOU THINK ?</h1>
-                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,<br>possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.</p>
-                                <a href="{% url 'contact' %}" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact With Me</a>
-                            </div>
-                        </div>
-                        
-                    </div>
+ <!--
+==================================================
+Call To Action Section Start
+================================================== -->
+<section id="call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">SO WHAT YOU THINK ?</h1>
+                    <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,<br>possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.</p>
+                    <a href="{% url 'contact' %}" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact With Me</a>
                 </div>
-            </section>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 {% endblock %}
